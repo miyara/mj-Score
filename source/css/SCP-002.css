@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+ul {
+	list-style: none;
+}
+
+.menu {
+	padding: 0px;
+}
+
+#menu_bar_check {
+	display: none;
+}
+
+#menu_bar {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu_bar li {
+	height: 0;
+	overflow: hidden;
+	transition: all 0.5s;
+}
+
+#menu_bar li a{
+	text-decoration: none;
+	color: #111;
+}
+
+#menu_bar_check:checked ~ #menu_bar li{
+	height: 20px;
+	opacity: 1;
+}
+
+dialog {
+	border-radius: 20px;
+}
+
+dialog > div{
+	margin: 10px;
+	text-align: left;
+}
+
+dialog > button {
+	width: 60px;
+	margin:0 10px;
+}
+
+button[id="show"] {
+	display: contents;
+	font-size: 100%;
+}
