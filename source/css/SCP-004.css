@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+input[name="return_button"] {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.mj-list {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-width: 2px;
+}
+
+.mj-list :last-child {
+    margin-left: auto;
+}
+
+li img {
+    width: 30px;
+    height: 30px;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_item {
+    margin-left: 10px;
+}
+
+.list-span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.rate_select {
+    width: 65px;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+.chip_select {
+    width: 65px;
+    padding-left: 5px;
+    padding-top: 3px;
+}
+
+.list_text {
+    width: 200px;
+}
+
+.list_memo {
+    width: 80%;
+}

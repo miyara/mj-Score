@@ -1,26 +1,70 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="ja">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>MJ Island</title>
-<link rel="stylesheet" href="../css/sanitize.css" />
-<link rel="stylesheet" href="../css/SCP-003.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MJ Island</title>
+    <link rel="stylesheet" href="../css/sanitize.css" />
+    <link rel="stylesheet" href="../css/SCP-003.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
+
 <body>
-	<header class="header">
-		<div class="header-inner inner">
-			<a href="../html/SCP-001.html">
-				<img src="../material/八索.jpg" alt="八索" name="八索"/>
-				<h1 class="title">MJ Island</h1>
-			</a>
-			<nav class="nav">
-				<ul class="list">
-					<li class="item">name</li>
-					<li class="item">menu</li>
-				</ul>
-			</nav>
-		</div>
-	</header>
+    <header>
+        <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
+            <a class="navbar-brand" href="../html/SCP-001.html">
+                <img src="../material/八索.jpg" alt="八索" name="八索" />
+                <h1 class="title">MJ Island</h1>
+            </a>
+            <ul class="nav nav-pills" box-sizing="content-box">
+                <li>
+                    <ul style="list-style: none; margin-right: 80px;">
+                        <li class="nav-item dropdown"><span class="nav-link" style="color: #111;">名前</span></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: #111;">
+                                メニュー
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./SCP-004.html">└スコア作成</a></li>
+                                <li><a class="dropdown-item" href="./SCP-005.html">└スコア一覧</a></li>
+                                <li><a class="dropdown-item" href="./SCP-006.html">└スコア集計</a></li>
+                                <li><a class="dropdown-item" href="./SCP-007.html">└メンバー登録</a></li>
+                                <li><a class="dropdown-item" href="./SCP-008.html">└メンバー一覧</a></li>
+                                <li>
+                                    <!-- Button trigger modal -->
+                                    <div class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        ログアウト
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="width: 200px; margin: auto;">
+                <div class="modal-content">
+                    <div class="modal-body" style="margin: auto;">
+                        ログアウトします。<br>よろしいですか？
+                    </div>
+                    <div class="modal-footer" style="margin: auto;">
+                        <a href="../html/SCP-001.html"><button type="button"
+                                class="btn btn-secondary wd-70px">はい</button></a>
+                        <button type="button" class="btn btn-secondary wd-70px" data-bs-dismiss="modal">いいえ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+        <script src="../js/SCP-002.js"></script>
+    </header>
 </body>
+
 </html>

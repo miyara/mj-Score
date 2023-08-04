@@ -1,0 +1,226 @@
+<!DOCTYPE html> <!-- HTML5を使う宣言 -->
+<html lang="ja">
+<!-- html全体を囲むタグ。絶対必要。閉じタグも必要。 -->
+
+<head>
+    <!-- 画面に表示されない。SEOや、画面の特徴を記載する（使ってる文字コードなど）。絶対必要。閉じタグも必要。 -->
+    <meta charset="UTF-8"> <!-- ブラウザが文字化けしないようにするためにUTF-8にエンコードしますよ、という宣言 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- スマホでもきれいに見せられるようにするおまじない -->
+    <title>titleタグ</title> <!-- ブラウザで表示した際、タブに書かれるタイトルです。 -->
+    ​
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    ​
+    <!-- JS -->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- 画面に表示される部分。ここにコンテンツ部分のタグを書く。絶対必要。閉じタグも必要。 -->
+    <!-- コメント ここに書いたことはブラウザに表示されません。開発者がチームのみんなに向けたメモを書くためのものです。 -->
+    ​
+    <h1>h1タグ heading（見出し）</h1>
+    <h2>h2タグ</h2>
+    <br> <!-- break（改行） -->
+    <h3>h3タグ</h3>
+    <h4>h4タグ</h4>
+    <hr> <!-- horizontal rule（水平線） -->
+    <h5>h5タグ</h5>
+    <h6>h6タグ</h6>
+    ​
+    <p>pタグ paragraph（段落）</p>
+    ​
+    <ol>
+        <!-- orderd list（連番） -->
+        <li>olタグで囲んだlistタグ</li>
+        <li>olタグで囲んだlistタグ</li>
+        <li>olタグで囲んだlistタグ</li>
+    </ol>
+    ​
+    <ul>
+        <!-- unorderd list（箇条書き） -->
+        <li>ulタグで囲んだlistタグ</li>
+        <li>ulタグで囲んだlistタグ</li>
+        <li>ulタグで囲んだlistタグ</li>
+    </ul>
+    ​
+    <dl>
+        <!-- definition list（用語の定義と用語の説明） -->
+        <dt>dlタグで囲んだdtタグ</dt> <!-- definition term（用語を定義） -->
+        <dd>dlタグで囲んだddタグ</dd> <!-- definition description（用語の説明） -->
+    </dl>
+    ​
+    <table>
+        <!-- tableはテーブルの枠を作ります。 -->
+        <caption>caption（表題）</caption>
+        <thead>
+            <!-- table headタグ。表のヘッダー一列をグループ化します。 -->
+            <tr>
+                <!-- table row。表の各横一列をグループ化します。 -->
+                <th>th1</th> <!-- table headerタグ。ヘッダーのセル1つを指します。 -->
+                <th>th2</th>
+                <th>th3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- table bodyタグ。表のボディすべての列をグループ化します。 -->
+            <tr>
+                <td>td 1-1</td> <!-- table dataタグ。ボディのセル1つを指します。 -->
+                <td>td 1-2</td>
+                <td>td 1-3</td>
+            </tr>
+            <tr>
+                <td>td 2-1</td>
+                <td>td 2-2</td>
+                <td>td 2-3</td>
+            </tr>
+            <tr>
+                <td>td 3-1</td>
+                <td>td 3-2</td>
+                <td>td 3-3</td>
+            </tr>
+        </tbody>
+    </table>
+    ​
+    <br><br>
+    ​
+    <form method="" action="">
+        <!--
+            formタグ。PHPと組み合わせて、お問い合わせ内容をDBと呼ばれる格納庫に保存したり、お問い合わせしてくれたユーザーにお礼のメールを送ったりするときに使います。Twitterなどのログインにも使われています。
+        -->
+        <!-- これまでのタグはすべて、ブロック要素というタグで、。。これから出てくるタグはインライン要素というタグで。。 -->
+        氏名 : <input type="text" name="user_name" value=""><br>
+        <!--
+            inputタグ。
+            typeには、入力するタイプを書きます。
+                text = ただの文字列
+                email = メールアドレス
+                password = パスワード
+                hidden = 画面には表示されない隠しデータ
+                などなど
+                http://www.htmq.com/html5/input.shtml
+        -->
+        <label>メールアドレス : <input type="email" name="email" value=""></label><br>
+        <!-- labelタグ。labelでinputを囲むと、囲んだ文字列をクリックすることでinputにフォーカスされます。 -->
+        <label>お問い合わせ内容<br>
+            <textarea name="comment" placeholder="お問い合わせ内容をご入力ください。"></textarea>
+            <!-- textareaタグ。typeは不要。valueは開始タグと終了タグの間に入ってきます。 -->
+        </label><br>
+        性別 : <input type="radio" name="gender" value="女性" checked>女性
+        <label><input type="radio" name="gender" value="男性">男性</label><br>
+        <!-- radioボタン。黒ポチの2択に使用します。checked属性で、デフォルトでチェックさせられます。 -->
+        居住地 :
+        <select name="prefecture">
+            <option value="">選択してください</option>
+            <option value="北海道">北海道</option>
+            <option value="青森県">青森県</option>
+            <option value="岩手県">岩手県</option>
+            <option value="宮城県">宮城県</option>
+            <option value="秋田県">秋田県</option>
+        </select>
+        <br>
+        <!-- selectタグ。3択以上ある場合はプルダウンが使いやすいです。 -->
+        <button type="button">ただのボタン</button>
+        <!-- buttonタグ。typeがbuttonの場合、押しても何も起きません。何か起きるように指定してあげる必要があります。 -->
+        <button type="submit">送信ボタン</button>
+        <!-- typeがsubmitの場合、押したらformが送信されます。 -->
+    </form>
+    ​
+    <br><br>
+    ​
+    <!-- anchorタグ（錨を下ろしてその町へアクセスするイメージ）hyper reference属性（参照するURL） -->
+    <a href="#idName1">id="idName1"と書いたタグへ遷移します。pタグにIDを書いて、リンクをクリックしてみましょう。</a>
+    <br>
+    <a href="https://stack-act.co.jp/"
+        target="_black">HTMLの特徴である、外部引用を可能にするリンクです。target="_blank"をつけると、別タブでリンクを開くことができます。</a>
+    <br>
+    <!-- imageタグ（画像を表示させるタグ。source属性（参照するパス）alternative属性（ネットが重くて画像が表示されなかった場合などに、本来どんな画像がここに表示されているかを表します。）） -->
+    <img src="https://images.unsplash.com/photo-1540202404-d0c7fe46a087?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6edfebe98a9c2c83f02a1be8d0aa37d3&auto=format&fit=crop&w=800&q=60"
+        alt="beach image">
+    <br>
+    <!-- aタグとimgタグを組み合わせるとこんなことができます。 -->
+    <a href="https://unsplash.com/search/photos/beach">
+        <img src="https://images.unsplash.com/photo-1540202404-d0c7fe46a087?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6edfebe98a9c2c83f02a1be8d0aa37d3&auto=format&fit=crop&w=800&q=60"
+            alt="beach image" height="300" width="300">
+    </a>
+    ​
+    <p>文章のうち、<span style="background: orange; color: #fff;">この部分だけ</span>修飾したいときはspanタグを使います。</p>
+    ​
+    <div class="bg-pink">
+        <!-- divisionタグ（ひとかたまりを作るときに使います。（めっちゃ使います）） -->
+        <p class="text-blue">文章文章文章文章文章文章文章文章</p>
+        <!-- class属性は、主にCSSで複数のものを同時に装飾したいときに使います。 -->
+        <p>文章文章文章文章文章文章文章文章</p>
+        <p>文章文章文章文章文章文章文章文章</p>
+        <p class="text-blue">文章文章文章文章文章文章文章文章</p>
+    </div>
+    ​
+    <style>
+        /* 修飾するためのタグです。 */
+        /* CSSのコメントの書き方 */
+        ​ .bg-pink {
+            /* class名がbg-pinkのものをすべて装飾します。 */
+            background: pink;
+            /* 背景色をピンクにします。 */
+        }
+
+        ​ div .text-blue {
+            /* devタグの中のclass名がtext-blueのものをすべて装飾 */
+            color: rgb(0, 0, 255);
+            /* 文字の色を青くします。 */
+            /* 色は、16進数やRGB、skyblueなどの単語を使用することができます。 */
+        }
+
+        ​
+        /*
+            装飾することを「CSSをあてる」と言います。
+            htmlファイルの拡張子は「.html」ですが、
+            cssファイルの拡張子は「.css」です。
+            htmlファイルの中にcssを書くのは読みにくいため、一般的にcssファイルに各種装飾を書きます。
+            style.cssというファイルを作成して、htmlからstyle.cssを読み込んでみましょう。
+        */
+    </style>
+    ​
+    ​
+    ​
+    ​
+    ​
+    <!-- inline-blockに来たら記述する -->
+    <a href="" class="inlineBlock">リンク１</a>
+    <a href="" class="inlineBlock">リンク２</a>
+    ​
+    <div class="flexContainer">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+    <input type="">
+
+</body>
+
+</html>

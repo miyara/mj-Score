@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+.body_template {
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 200px;
+    width: 700px;
+}
+
+.exclamation {
+    width: 10px;
+}
+
+.mg-auto {
+    margin: auto;
+}
+
+.mg-0auto {
+    margin: 0 auto;
+}
+
+.mg-10px {
+    margin: 10px;
+}
+
+.mg-20px {
+    margin: 20px;
+}
+
+.mg-30px {
+    margin: 30px;
+}
+
+.mg-40px {
+    margin: 40px;
+}
+
+.mg-50px {
+    margin: 50px;
+}
+
+.mg-top-10px {
+    margin-top: 10px;
+}
+
+.mg-top-20px {
+    margin-top: 20px;
+}
+
+.mg-top-30px {
+    margin-top: 30px;
+}
+
+.mg-top-40px {
+    margin-top: 40px;
+}
+
+.mg-top-50px {
+    margin-top: 50px;
+}

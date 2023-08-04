@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-a {
+nav a {
 	text-decoration: none;
 	color: #111;
 	display: flex;
@@ -42,4 +42,8 @@ img[name = "八索"] {
 
 .nav {
 	margin-left: auto;
+}
+
+.wd-70px {
+	width: 70px;
 }
